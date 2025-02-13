@@ -75,18 +75,18 @@ export default function Products() {
   ];
 
   return (
-    <div className="flex w-full flex-col gap-10 px-5">
-      <div>
-        <p className="text-2xl">Бүтээгдхүүний танилцуулгууд</p>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+    <div className="flex w-full flex-col justify-center gap-10 px-5 pb-[50px]">
+      <div className="flex flex-col gap-4">
+        <p className="px-[5%] text-2xl">Бүтээгдхүүний танилцуулгууд</p>
+        <div className="xl grid w-[100%] grid-cols-1 items-center justify-center gap-[50px] px-[5%] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {data.map((car, index) => (
-            <div key={index} className="flex w-full flex-col">
+            <div key={index} className="flex w-[100%] flex-col">
               <Image
                 src={car.img}
                 alt={car.name}
                 width={200}
                 height={150}
-                className="rounded-lg object-cover"
+                className="w-[100%] rounded-lg object-cover"
               />
               <div className="flex flex-col gap-3">
                 <p className="text-lg">{car.name}</p>
@@ -98,28 +98,40 @@ export default function Products() {
         </div>
       </div>
 
-      {[stuff, something].map((category, i) => (
-        <div
-          key={i}
-          className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
-        >
-          {category.map((item, index) => (
-            <div key={index} className="flex w-full flex-col">
-              <Image
-                src={item.img}
-                alt={item.name}
-                width={200}
-                height={150}
-                className="rounded-lg object-cover"
-              />
-              <div className="flex flex-col gap-3">
-                <p className="text-lg">{item.name}</p>
-                <p className="text-end text-xl text-blue-900">{item.price}</p>
-              </div>
+      <div className="xl grid w-[100%] grid-cols-1 items-center justify-center gap-[50px] px-[5%] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {stuff.map((car, index) => (
+          <div key={index} className="flex w-[100%] flex-col">
+            <Image
+              src={car.img}
+              alt={car.name}
+              width={200}
+              height={150}
+              className="w-[100%] rounded-lg object-cover"
+            />
+            <div className="flex flex-col gap-3">
+              <p className="text-lg">{car.name}</p>
+              <p className="text-end text-xl text-blue-900">{car.price}</p>
             </div>
-          ))}
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
+      <div className="xl grid w-[100%] grid-cols-1 items-center justify-center gap-[50px] px-[5%] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {something.map((car, index) => (
+          <div key={index} className="flex w-[100%] flex-col">
+            <Image
+              src={car.img}
+              alt={car.name}
+              width={200}
+              height={150}
+              className="w-[100%] rounded-lg object-cover"
+            />
+            <div className="flex flex-col gap-3">
+              <p className="text-lg">{car.name}</p>
+              <p className="text-end text-xl text-blue-900">{car.price}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,7 +1,36 @@
+import { BsTwitterX } from "react-icons/bs";
+import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 export default function Footer() {
   return (
-    <header>
-      <h1>Footer</h1>
-    </header>
+    <div className="flex h-[330px] w-full flex-col justify-center justify-between gap-[32px] bg-[#052434] px-[64px] py-[80px] text-white">
+      <div className="flex justify-between gap-[24px]">
+        <Image
+          src="/Logo.png"
+          alt="logo"
+          width={120}
+          height={15}
+          className="h-[14px] w-[120px]"
+        />
+        <div className="flex justify-center gap-[32px] text-[16px]">
+          <p>Link One</p>
+          <p>Link Two</p>
+          <p>Link Three</p>
+          <p>Link Four</p>
+          <p>Link Five</p>
+        </div>
+        <div className="flex gap-[12px] text-[24px]">
+          <FaFacebook />
+          <FaInstagram />
+          <BsTwitterX />
+          <FaLinkedin />
+          <FaYoutube />
+        </div>
+      </div>
+      <div className="h-[2px] w-[100%] bg-white"></div>
+      <div className="text-[#A3A3A3]">
+        © 2025 БҮХ ЭРХ ХУУЛИАР ХАМГААЛАГДСАН
+      </div>
+    </div>
   );
 }
