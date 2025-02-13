@@ -22,7 +22,9 @@ export default function Header() {
           <p>Бидний тухай</p>
         </Link>
         <p>Үйлчилгээ</p>
-        <p>Барилгын материал</p>
+        <Link href="/car-tools">
+          <p>Барилгын материал</p>
+        </Link>
         <Link href="/car-shop">
           <p>Авто худалдаа</p>
         </Link>
