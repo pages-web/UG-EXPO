@@ -29,9 +29,11 @@ export default function Header() {
           <p>Авто худалдаа</p>
         </Link>
         <Link href="/car-shop-tools">
-          <p>Aвто сэлбэг</p>
+          <p>Aвтo сэлбэг</p>
         </Link>
-        <p>Талбай түрээс</p>
+        <Link href="/things">
+          <p>Талбай түрээс</p>
+        </Link>
       </div>
       <div className="flex gap-[12px]">
         <div className="flex h-[32px] w-[32px] items-center justify-center rounded-full bg-white">

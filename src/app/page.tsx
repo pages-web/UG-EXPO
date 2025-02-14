@@ -1,5 +1,6 @@
 import Info from "./components/Info";
 import Products from "./components/Product";
+import News from "./components/News";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         </button>
       </div>
       <Info />
+      <News />
       <Products />
     </div>
   );
