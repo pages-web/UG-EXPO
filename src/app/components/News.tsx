@@ -10,20 +10,20 @@ export default function News() {
         height={630}
         className="rounded-[12px] px-[5%] pb-[40px]"
       />
-      <div className="flex gap-[23px] p-[18px] px-[5%]">
+      <div className="flex flex-col p-[18px] px-[5%] md:flex-row md:justify-between">
         <Image
           src="/home/frame.png"
           alt="."
-          width={1200}
-          height={555}
-          className="rounded-[12px]"
+          width={800}
+          height={400}
+          className="mb-[20px] w-[100%] rounded-[12px] md:w-[49%]"
         />
         <Image
           src="/home/frame.png"
           alt="."
-          width={1200}
-          height={555}
-          className="rounded-[12px]"
+          width={800}
+          height={400}
+          className="mb-[20px] w-[100%] rounded-[12px] md:w-[49%]"
         />
       </div>
     </div>

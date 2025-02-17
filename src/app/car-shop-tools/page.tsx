@@ -83,8 +83,8 @@ export default function CarShop() {
         Авто машины сэлбэг
       </div>
 
-      <div className="flex justify-between gap-[24px] px-[5%]">
-        <div className="flex gap-[24px]">
+      <div className="flex flex-col justify-between gap-[24px] px-[5%] lg:flex-row">
+        <div className="flex gap-2 lg:gap-[24px]">
           <div className="rounded-[8px] bg-[#EA5721] px-[16px] py-[8px] text-[16px] text-white">
             Төрөл
           </div>

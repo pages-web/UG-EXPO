@@ -6,9 +6,11 @@ export default function About() {
       <div className="flex h-[240px] w-full items-center justify-center bg-[#011C65] text-[48px] text-white">
         Бидний тухай
       </div>
-      <div className="flex px-[5%] py-[50px]">
-        <div className="w-[40%] text-[32px] font-bold">Уран ган экспо нь</div>
-        <div className="w-[60%] text-justify text-[16px]">
+      <div className="flex flex-col px-[5%] py-[50px] lg:flex-row">
+        <div className="w-[90%] text-[32px] font-bold lg:w-[40%]">
+          Уран ган экспо нь
+        </div>
+        <div className="text-justify text-[16px] lg:w-[60%]">
           Өнөөдрийн байдлаар автомашины худалдаа, авто сэлбэгийн худалдаа,
           агрегат засвар үйлчилгээ, авто угаалгын газар, барилгын материалын
           төрөлжсөн худалдаа нэг дор үйл ажиллагаагаа эрхлэн явуулж байна. Мөн

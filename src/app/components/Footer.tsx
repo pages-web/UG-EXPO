@@ -3,8 +3,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 export default function Footer() {
   return (
-    <div className="flex h-[330px] w-full flex-col justify-center justify-between gap-[32px] bg-[#052434] px-[64px] py-[80px] text-white">
-      <div className="flex justify-between gap-[24px]">
+    <div className="flex w-full flex-col justify-center justify-between gap-[32px] bg-[#052434] px-[64px] py-[80px] text-white">
+      <div className="flex flex-col justify-between gap-[24px] lg:flex-row">
         <Image
           src="/Logo.png"
           alt="logo"
@@ -12,7 +12,7 @@ export default function Footer() {
           height={15}
           className="h-[14px] w-[120px]"
         />
-        <div className="flex justify-center gap-[32px] text-[16px]">
+        <div className="flex flex-col justify-center gap-[32px] text-[16px] lg:flex-row">
           <p>Link One</p>
           <p>Link Two</p>
           <p>Link Three</p>

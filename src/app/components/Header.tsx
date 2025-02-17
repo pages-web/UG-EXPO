@@ -17,7 +17,7 @@ export default function Header() {
           className="h-[20px] w-[130px]"
         />
       </Link>
-      <div className="flex gap-[20px] text-white">
+      <div className="hidden gap-[20px] text-white xl:flex">
         <Link href="/about">
           <p>Бидний тухай</p>
         </Link>
@@ -42,6 +42,7 @@ export default function Header() {
         <div className="flex h-[32px] w-[32px] items-center justify-center rounded-full bg-white">
           <SiInstagram />
         </div>
+        <p className="flex text-white xl:hidden">hamburger</p>
       </div>
     </div>
   );

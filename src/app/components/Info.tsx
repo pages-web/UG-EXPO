@@ -15,7 +15,7 @@ export default function Info() {
         </p>
       </div>
 
-      <div className="flex gap-[36px]">
+      <div className="flex flex-col gap-[36px] lg:flex-row">
         <div className="flex flex-col items-center justify-center gap-[20px] rounded-[12px] border-[1px] border-[#AEA6A6] px-[48px] py-[20px]">
           <Image
             src="/home/carwheel.png"
