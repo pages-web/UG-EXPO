@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 export default function CarShop() {
   const data = [
@@ -6,24 +7,28 @@ export default function CarShop() {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 1,
       price: "49'000₮",
     },
     {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 2,
       price: "49'000₮",
     },
     {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 3,
       price: "49'000'000₮",
     },
     {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 4,
       price: "49'000'000₮",
     },
 
@@ -31,48 +36,57 @@ export default function CarShop() {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 5,
       price: "49'000'000₮",
     },
     {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 6,
       price: "49'000'000₮",
     },
     {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 7,
+
       price: "49'000'000₮",
     },
     {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 1,
       price: "49'000'000₮",
     },
     {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 1,
       price: "49'000'000₮",
     },
     {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 1,
       price: "49'000'000₮",
     },
     {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 1,
       price: "49'000'000₮",
     },
     {
       img: "/home/black-car.png",
       name: "Дээврийн материал",
       year: "2020/2025",
+      id: 1,
       price: "49'000'000₮",
     },
   ];
@@ -83,8 +97,8 @@ export default function CarShop() {
         Авто машины сэлбэг
       </div>
 
-      <div className="flex flex-col justify-between gap-[24px] px-[5%] lg:flex-row">
-        <div className="flex gap-2 lg:gap-[24px]">
+      <div className="flex justify-between gap-[24px] px-[5%]">
+        <div className="flex gap-[24px]">
           <div className="rounded-[8px] bg-[#EA5721] px-[16px] py-[8px] text-[16px] text-white">
             Төрөл
           </div>
@@ -107,20 +121,24 @@ export default function CarShop() {
         <div className="flex flex-col gap-4">
           <div className="grid w-[100%] grid-cols-1 items-center justify-center gap-[50px] px-[5%] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {data.map((car, index) => (
-              <div key={index} className="flex w-[100%] flex-col">
-                <Image
-                  src={car.img}
-                  alt={car.name}
-                  width={200}
-                  height={150}
-                  className="w-[100%] rounded-lg object-cover"
-                />
-                <div className="flex flex-col gap-3">
-                  <p className="text-lg">{car.name}</p>
-                  <p className="text-gray-600">{car.year}</p>
-                  <p className="text-end text-xl text-blue-900">{car.price}</p>
+              <Link href={`/car-details/${car.id}`} key={index}>
+                <div key={index} className="flex w-[100%] flex-col">
+                  <Image
+                    src={car.img}
+                    alt={car.name}
+                    width={200}
+                    height={150}
+                    className="w-[100%] rounded-lg object-cover"
+                  />
+                  <div className="flex flex-col gap-3">
+                    <p className="text-lg">{car.name}</p>
+                    <p className="text-gray-600">{car.year}</p>
+                    <p className="text-end text-xl text-blue-900">
+                      {car.price}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
