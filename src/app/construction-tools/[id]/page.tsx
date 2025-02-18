@@ -8,74 +8,61 @@ export default function CarDetail() {
   const id = pathname?.split("/").pop();
   const data = [
     {
-      name: "Lanborgini",
+      images: [
+        "https://images.unsplash.com/photo-1604014234395-4780c99bc063",
+        "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
+        "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
+        "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
+      ],
+      name: "Bathroom mirror with lights",
+      price: 49000,
       id: 1,
+      productType: "Construction tools",
+      productCategory: "Bathroom Furniture",
+      productShowcase: "Mirror with lights",
+      productSize: "90 * 90",
+      internetAddress: "Gegeenshop.mn",
+      phoneNumber: 88806207,
+      Address: "Urangan hudaldaanii tuv D-12 pavilion",
+      moreInformation: "Have to sell quickly",
+    },
+    {
       images: [
         "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
         "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
         "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
         "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
       ],
-      madeYear: 2024,
-      enterdYear: 2024,
-      salonColor: "shargal",
-      OutColor: "black",
-      lenght: 12312,
-      motorTypes: "gasoline",
-      Motor: "3956",
-      speedHairag: "automatic",
-      drivingSpeed: "left",
-      fuelType: "gasoline",
-      sellerPhoneNumber: 89898989,
-      publishedDay: "2025/10/12",
-      moreInformation: "Urangan",
-    },
-    {
-      name: "Bugatti",
-
+      name: "Bathroom mirror with lights",
+      price: 49000,
       id: 2,
-      images: [
-        "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
-        "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
-        "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
-        "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
-      ],
-      madeYear: 2024,
-      enterdYear: 2024,
-      salonColor: "shargal",
-      OutColor: "black",
-      lenght: 12312,
-      motorTypes: "gasoline",
-      Motor: "3956",
-      speedHairag: "automatic",
-      drivingSpeed: "left",
-      fuelType: "gasoline",
-      sellerPhoneNumber: 89898989,
-      publishedDay: "2025/10/12",
-      moreInformation: "Urangan",
+      productType: "Construction tools",
+      productCategory: "Bathroom Furniture",
+      productShowcase: "Mirror with lights",
+      productSize: "90 * 90",
+      internetAddress: "Gegeenshop.mn",
+      phoneNumber: 88806207,
+      Address: "Urangan hudaldaanii tuv D-12 pavilion",
+      moreInformation: "Have to sell quickly",
     },
     {
-      name: "Benz",
-      id: 3,
       images: [
         "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
         "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
         "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
         "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
       ],
-      madeYear: 2024,
-      enterdYear: 2024,
-      salonColor: "shargal",
-      OutColor: "black",
-      lenght: 12312,
-      motorTypes: "gasoline",
-      Motor: "3956",
-      speedHairag: "automatic",
-      drivingSpeed: "left",
-      fuelType: "gasoline",
-      sellerPhoneNumber: 89898989,
-      publishedDay: "2025/10/12",
-      moreInformation: "Urangan",
+      name: "Bathroom mirror with lights",
+      price: 49000,
+      id: 3,
+      productType: "Construction tools",
+      productCategory: "Bathroom Furniture",
+      productShowcase: "Mirror with lights",
+      productSize: "90 * 90",
+      internetAddress: "Gegeenshop.mn",
+      phoneNumber: 88806207,
+      Address: "Urangan hudaldaanii tuv D-12 pavilion",
+      moreInformation: "Have to sell quickly",
     },
   ];
 
@@ -85,18 +72,18 @@ export default function CarDetail() {
     });
   }, []);
 
-  const selectedCar = data.find((car) => car.id.toString() === id);
+  const selectedProduct = data.find((car) => car.id.toString() === id);
 
-  if (!selectedCar) {
+  if (!selectedProduct) {
     return <p>Car not found.</p>;
   }
 
   return (
     <div>
       <div className="mt-[70px] flex w-full flex-col p-8 py-[50px] lg:flex-row">
-        <div className="mr-8 flex w-full flex-col xl:w-1/2">
+        {/* <div className="mr-8 flex w-full flex-col xl:w-1/2">
           <Image
-            src={selectedCar?.images?.[0]}
+            src={"https://images.unsplash.com/photo-1604014234395-4780c99bc063"}
             alt="Car Image"
             width={100}
             height={100}
@@ -104,7 +91,7 @@ export default function CarDetail() {
           />
 
           <div className="mt-4 flex gap-2">
-            {selectedCar?.images
+            {selectedProduct?.images
               .slice(1, 4)
               .map((image, index) => (
                 <Image
@@ -115,39 +102,31 @@ export default function CarDetail() {
                 />
               ))}
           </div>
-        </div>
+        </div> */}
         <div className="ml-8 mt-[20px] flex flex-row text-lg xl:ml-16">
           <div className="flex flex-col">
-            <p>Car Name:</p>
-            <p>Made Year:</p>
-            <p>Entered Year:</p>
-            <p>Salon Color:</p>
-            <p>Out Color:</p>
-            <p>Length:</p>
-            <p>Motor Types:</p>
-            <p>Motor</p>
-            <p>Speed Hairag:</p>
-            <p>Driving Speed:</p>
-            <p>Fuel Type:</p>
-            <p>Seller Phone Number:</p>
-            <p>Published Day:</p>
+            <p>Name:</p>
+            <p>Price:</p>
+            <p>Product Type:</p>
+            <p>Product Category: </p>
+            <p>Product Showcase: </p>
+            <p>Product Size:</p>
+            <p>Internet Address/URL:</p>
+            <p>Phonenumber:</p>
+            <p>Address:</p>
             <p>More Information:</p>
           </div>
           <div className="ml-[300px] flex-col">
-            <p>{selectedCar?.name}</p>
-            <p>{selectedCar?.madeYear}</p>
-            <p>{selectedCar?.enterdYear}</p>
-            <p>{selectedCar?.salonColor}</p>
-            <p>{selectedCar?.OutColor}</p>
-            <p>{selectedCar?.lenght}</p>
-            <p>{selectedCar?.motorTypes}</p>
-            <p>{selectedCar?.Motor}</p>
-            <p>{selectedCar?.speedHairag}</p>
-            <p>{selectedCar?.drivingSpeed}</p>
-            <p>{selectedCar?.fuelType}</p>
-            <p>{selectedCar?.sellerPhoneNumber}</p>
-            <p>{selectedCar?.publishedDay}</p>
-            <p>{selectedCar?.moreInformation}</p>
+            <p>{selectedProduct?.name}</p>
+            <p>{selectedProduct?.price}</p>
+            <p>{selectedProduct?.productType}</p>
+            <p>{selectedProduct?.productCategory}</p>
+            <p>{selectedProduct?.productShowcase}</p>
+            <p>{selectedProduct?.productSize}</p>
+            <p>{selectedProduct?.internetAddress}</p>
+            <p>{selectedProduct?.phoneNumber}</p>
+            <p>{selectedProduct?.Address}</p>
+            <p>{selectedProduct?.moreInformation}</p>
           </div>
         </div>
       </div>

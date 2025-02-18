@@ -121,7 +121,7 @@ export default function CarShop() {
         <div className="flex flex-col gap-4">
           <div className="grid w-[100%] grid-cols-1 items-center justify-center gap-[50px] px-[5%] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {data.map((car, index) => (
-              <Link href={`/car-details/${car.id}`} key={index}>
+              <Link href={`/car-tools-69/${car.id}`} key={index}>
                 <div key={index} className="flex w-[100%] flex-col">
                   <Image
                     src={car.img}
