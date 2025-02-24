@@ -19,15 +19,15 @@ export default function Home() {
         </div>
         <div className="gap-[32px] text-[14px] font-light text-white sm:flex sm:text-[17px] md:text-[23px] lg:text-[27px]">
           <div className="flex items-center justify-center gap-[12px]">
-            <div className="h-[5px] w-[5px] flex-col rounded-full bg-white sm:h-[10px] sm:w-[10px] md:h-[15px] md:w-[15px] lg:h-[20px] lg:w-[20px]"></div>
+            <div className="h-[5px] w-[5px] flex-col rounded-full bg-white sm:h-[10px] sm:w-[10px] md:h-[12px] md:w-[12px] lg:h-[15px] lg:w-[15px]"></div>
             <div className="">Авто машин</div>
           </div>
           <div className="flex items-center justify-center gap-[12px]">
-            <div className="h-[5px] w-[5px] rounded-full bg-white sm:h-[10px] sm:w-[10px] md:h-[15px] md:w-[15px] lg:h-[20px] lg:w-[20px]"></div>
+            <div className="h-[5px] w-[5px] rounded-full bg-white sm:h-[10px] sm:w-[10px] md:h-[12px] md:w-[12px] lg:h-[15px] lg:w-[15px]"></div>
             <div className="">Барилгын материал</div>
           </div>
           <div className="flex items-center justify-center gap-[12px]">
-            <div className="h-[5px] w-[5px] rounded-full bg-white sm:h-[10px] sm:w-[10px] md:h-[15px] md:w-[15px] lg:h-[20px] lg:w-[20px]"></div>
+            <div className="h-[5px] w-[5px] rounded-full bg-white sm:h-[10px] sm:w-[10px] md:h-[12px] md:w-[12px] lg:h-[15px] lg:w-[15px]"></div>
             <div className="">Авто машины худалдаа</div>
           </div>
         </div>

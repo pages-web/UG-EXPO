@@ -65,35 +65,75 @@ export default function Header() {
       </div>
 
       <div
-        className={`fixed left-0 top-0 h-full w-[250px] transform bg-white text-black shadow-xl transition-all duration-300 ${
+        className={`shadow-4xl fixed left-0 top-0 h-full w-[250px] transform bg-gradient-to-b from-gray-700 to-neutral-900 text-white transition-all duration-500 ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } xl:hidden`}
       >
         <div className="flex justify-end p-4">
           <p
-            className="cursor-pointer text-2xl text-black"
+            className="cursor-pointer text-3xl font-semibold text-white transition-colors duration-300 hover:text-yellow-400"
             onClick={closeSidebar}
           >
             X
           </p>
         </div>
-        <div className="flex flex-col gap-6 p-4">
+        <div className="flex flex-col gap-6 p-6">
           <Link href="/about">
-            <p onClick={closeSidebar}>Бидний тухай</p>
+            <p
+              className="text-lg font-medium transition-colors duration-300 hover:text-yellow-300"
+              onClick={closeSidebar}
+            >
+              Бидний тухай
+            </p>
           </Link>
-          <p onClick={closeSidebar}>Үйлчилгээ</p>
+          <p
+            className="text-lg font-medium transition-colors duration-300 hover:text-yellow-300"
+            onClick={closeSidebar}
+          >
+            Үйлчилгээ
+          </p>
           <Link href="/car-tools">
-            <p onClick={closeSidebar}>Барилгын материал</p>
+            <p
+              className="text-lg font-medium transition-colors duration-300 hover:text-yellow-300"
+              onClick={closeSidebar}
+            >
+              Барилгын материал
+            </p>
           </Link>
           <Link href="/car-shop">
-            <p onClick={closeSidebar}>Авто худалдаа</p>
+            <p
+              className="text-lg font-medium transition-colors duration-300 hover:text-yellow-300"
+              onClick={closeSidebar}
+            >
+              Авто худалдаа
+            </p>
           </Link>
           <Link href="/car-shop-tools">
-            <p onClick={closeSidebar}>Авто сэлбэг</p>
+            <p
+              className="text-lg font-medium transition-colors duration-300 hover:text-yellow-300"
+              onClick={closeSidebar}
+            >
+              Авто сэлбэг
+            </p>
           </Link>
           <Link href="/things">
-            <p onClick={closeSidebar}>Талбай түрээс</p>
+            <p
+              className="text-lg font-medium transition-colors duration-300 hover:text-yellow-300"
+              onClick={closeSidebar}
+            >
+              Талбай түрээс
+            </p>
           </Link>
+        </div>
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 transform">
+          <div className="flex justify-center gap-4">
+            <div className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-white text-blue-500 transition-colors duration-300 hover:bg-blue-500 hover:text-white">
+              <MdFacebook className="text-[20px]" />
+            </div>
+            <div className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-white text-pink-500 transition-colors duration-300 hover:bg-pink-500 hover:text-white">
+              <SiInstagram />
+            </div>
+          </div>
         </div>
       </div>
     </div>
