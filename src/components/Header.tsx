@@ -3,16 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { FaSearch, FaPhone, FaBars, FaTimes } from "react-icons/fa";
 
 const NavigationFyodor = () => {
   const [isDropdownBlaBlaBla, setIsDropdownBlaBlaBla] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
-  // Get current route
-  const router = useRouter();
-  const currentPath = router.pathname || window.location.pathname;
+  // Get current route using usePathname
+  const currentPath = usePathname();
   
   // Determine which logo to use
   const logoSrc = currentPath === "/" ? "/Logo.png" : "/Lego.png";

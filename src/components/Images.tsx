@@ -17,8 +17,8 @@ export default function Images() {
         <div className="text-white">
           <p className="font-semibold mb-2 text-base sm:text-lg lg:text-xl">Mbank</p>
           <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
-            Спорт, энтертайнмент салбарт хамтран ажиллаж, Монголын анхны нэршлийн
-            спорт арена болох "M Bank Arena"-г хөгжүүлж байна.
+            Спорт энтертайнмент салбарт хамтран ажиллаж Монголын анхны нэршлийн
+            спорт арена болох M Bank Arena-г хөгжүүлж байна.
           </p>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default function Images() {
           </p>
           <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
             Бид салбар бүрт холбогдох мэргэжлийн холбоодтой идэвхтэй хамтран
-            ажиллаж, чанар, үйлчилгээний жишгийг шинэ түвшинд хүргэхийг
+            ажиллаж, чанар үйлчилгээний жишгийг шинэ түвшинд хүргэхийг
             эрмэлздэг.
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function Images() {
             Foreign suppliers and brands
           </p>
           <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
-            Олон улсын стандарт бүхий бүтээгдэхүүн, үйлчилгээ нэвтрүүлж,
+            Олон улсын стандарт бүхий бүтээгдэхүүн үйлчилгээ нэвтрүүлж
             Монголын хэрэглэгчдэд шинэ сонголтыг хүргэх чиглэлээр хамтран ажиллаж
             байна.
           </p>

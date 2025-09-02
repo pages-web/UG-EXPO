@@ -1,7 +1,5 @@
-import { type Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
 
-import ClientLayout from "@/app/client-layout";
+import { Inter, Manrope } from "next/font/google";
 
 import "./globals.css";
 import { Providers } from "@/providers";
@@ -33,8 +31,7 @@ export default function RootLayout({
 
       <body className={("font-manrope w-full dark:bg-white")}>             {/* dark:bg-[#202020]" */}
         <Providers>
-          <NavigationFyodor/>
-          <ClientLayout>{children}</ClientLayout>
+          <NavigationFyodor/>{children}
           <Footer />
         </Providers>
       </body>
