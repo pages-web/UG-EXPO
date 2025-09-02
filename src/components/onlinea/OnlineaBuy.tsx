@@ -10,7 +10,7 @@ const OnlineaBuy = () => {
       </div>
       <div className="mt-2 sm:mt-3 lg:mt-4">
         <Image
-          src="/home/online.png"
+          src="/home/carss.png"
           alt="skibidi"
           width={500}
           height={367}

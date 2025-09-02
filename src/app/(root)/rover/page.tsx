@@ -6,7 +6,7 @@ import RoverService from "@/components/rover/RoverService";
 
 const Rover = () => {
   return (
-    <div className="flex flex-col gap-[30px] pt-[5%]">
+    <div className="flex flex-col gap-[30px] pt-[5%] py-16">
       <RoverRange />
       <RoverPart />
       <RoverService />

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function RoverRange() {
   return (
-    <div className="flex w-full flex-col justify-start px-[5%] py-[20px]">
+    <div className="flex w-full flex-col justify-start py-[20px] px-[10%]">
       <div className="flex gap-[4px]">
         <p className="text-[20px] uppercase text-[#5C5C5C]">←</p>
         <p className="text-[20px] uppercase text-black">RANGE ROVER SUS LWB</p>

@@ -11,7 +11,9 @@ const About = () => {
     <div className="flex flex-col gap-[30px] py-[5%]">
       <AboutUs />
       <AboutRandom />
+      <div className="px-[10%]">
       <Images />
+      </div>
       <AboutTeamwork />
       <AboutQuestions />
     </div>

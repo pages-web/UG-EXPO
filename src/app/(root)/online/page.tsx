@@ -6,7 +6,7 @@ import OnlineSkibidi from "@/components/online/OnlineSkibidi";
 
 const Online = () => {
   return (
-    <div className="flex flex-col gap-[30px] py-[5%]">
+    <div className="flex flex-col gap-[30px] py-[5%] px-[10%]">
       <OnlineBuy />
       <OnlineCars />
       <OnlineSkibidi />

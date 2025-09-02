@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <div>
       <Home />
-      <div className="flex flex-col gap-[30px] px-[3%] py-[5%]">
+      <div className="flex flex-col gap-[30px] px-[10%] py-[5%]">
         <Product />
         <Images />
         <Platform />

@@ -8,27 +8,27 @@ export default function OnlineaSkibidi() {
     {
       title: "2023/25 v8 engine, 2.7s, 700cv",
       phone: "+976 89899999",
-      image: "/home/vroomvroom.png",
+      image: "/home/wheel.png",
     },
     {
       title: "2023/25 v8 engine, 2.7s, 700cv",
       phone: "+976 89899999",
-      image: "/home/vroomvroom.png",
+      image: "/home/wheel.png",
     },
     {
       title: "2023/25 v8 engine, 2.7s, 700cv",
       phone: "+976 89899999",
-      image: "/home/vroomvroom.png",
+      image: "/home/wheel.png",
     },
     {
       title: "2023/25 v8 engine, 2.7s, 700cv",
       phone: "+976 89899999",
-      image: "/home/vroomvroom.png",
+      image: "/home/wheel.png",
     },
     {
       title: "2023/25 v8 engine, 2.7s, 700cv",
       phone: "+976 89899999",
-      image: "/home/vroomvroom.png",
+      image: "/home/wheel.png",
     },
   ];
 

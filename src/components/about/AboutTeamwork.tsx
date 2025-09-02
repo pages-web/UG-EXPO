@@ -29,7 +29,7 @@ const data = [
 
 export default function AboutTeamwork() {
   return (
-    <div className="px-4 py-10 md:px-16">
+    <div className="px-[10%]">
       <div className="">
         <p className="mb-4 text-[14px] uppercase text-[#767777]">
           Strategic direction

@@ -1,42 +1,21 @@
-module.exports = {
-  // Enable React Strict Mode (optional but useful for debugging)
-  reactStrictMode: true,
-
-  // Configure external domains for image optimization
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  env: {
+    NEXT_PUBLIC_ERXES_API_URL: "https://urangan.app.erxes.io/gateway/graphql",
+    NEXT_PUBLIC_ERXES_APP_TOKEN:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHAiOnsibmFtZSI6InVnLWdyb3VwIiwiY3JlYXRlZEF0IjoiMjAyNS0wNi0wM1QxODo0MDo0MC45NzZaIiwidXNlckdyb3VwSWQiOiI0RUh5ZFREQWlzMkxkUW5abiIsImV4cGlyZURhdGUiOiIyMDI1LTA3LTA0VDA3OjI3OjU1LjU2M1oiLCJub0V4cGlyZSI6dHJ1ZSwiYWxsb3dBbGxQZXJtaXNzaW9uIjp0cnVlLCJfaWQiOiI2eDVmX1IyakVmRVNTZ0F3amRiRlgiLCJfX3YiOjB9LCJpYXQiOjE3NDkwMjIwODh9.PBhNgIcNXwsCjs-DiFDqt7FEtkYhye5vpz7aF798hYE",
+  },
   images: {
     domains: [
-      "https://www.elegantthemes.com/blog/wp-content/uploads/2015/02/custom-trackable-short-url-feature.png",
-      "https://images.unsplash.com",
-      "anotherdomain.com",
-    ], // Add any external image domains here
-  },
-
-  // Add custom Webpack configuration (optional)
-  webpack(config, { isServer }) {
-    if (!isServer) {
-      // Example of custom webpack config for client-side builds
-      config.resolve.fallback = { fs: false };
-    }
-    return config;
-  },
-
-  // Other possible configurations (e.g., redirects, rewrites, etc.)
-  async redirects() {
-    return [
-      {
-        source: "/old-page",
-        destination: "/new-page",
-        permanent: true,
-      },
-    ];
-  },
-
-  async rewrites() {
-    return [
-      {
-        source: "/api/:path*",
-        destination: "https://example.com/api/:path*",
-      },
-    ];
+      "images-na.ssl-images-amazon.com",
+      "utfs.io",
+      "cdn.discordapp.com",
+      "media.discordapp.net",
+      "t4.ftcdn.net",
+      "urangan.app.erxes.io",
+      "img.freepik.com",
+    ],
   },
 };
+
+export default nextConfig;

@@ -27,7 +27,7 @@ export default function RoverPart() {
   ];
 
   return (
-    <div className="px-[5%]">
+    <div className="px-[10%]">
       <div className="mb-16 grid grid-cols-4 gap-[10px]">
         {leaders.map((leader, index) => (
           <div
