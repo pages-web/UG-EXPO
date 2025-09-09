@@ -59,13 +59,6 @@ export default function News() {
   const posts = data?.cmsPostList?.posts || [];
   console.log(posts);
 
-  const newsItems = Array.from({ length: 9 }, (_, index) => ({
-    id: index + 1,
-    title:
-      "UG Expo-ийн вебсайт нь барилгын материалын төрөлжсөн худалдаа, авто машины худалдаа, сэлбэгийн",
-    time: "10мин өмнө",
-    image: "/home/fyodor.png",
-  }));
 
   return (
     <div className="px-4 pb-[30px] pt-[50px] sm:px-6 sm:pb-[40px] sm:pt-[60px] lg:px-[10%] lg:pt-[70px]">
@@ -75,8 +68,8 @@ export default function News() {
       <div className="mb-6 h-[1px] w-full bg-[#D1D1D1] sm:mb-8"></div>
 
       <div className="grid grid-cols-1 gap-6 sm:gap-7 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-        {posts.map((item: any) => (
-          <div key={item.id} className="flex flex-col">
+        {posts.map((item: { _id: string; title: string; excerpt: string; thumbnail?: { url: string } }) => (
+          <div key={item._id} className="flex flex-col">
             <div className="relative mb-3 sm:mb-4">
               <Image
                 src={`https://urangan.app.erxes.io/gateway/read-file?key=${item.thumbnail?.url || "/home/fyodor.png"}`}

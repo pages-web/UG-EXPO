@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 
 export default function News() {
   // Example static data
@@ -39,7 +40,7 @@ export default function News() {
         {posts.map((post) => (
           <div key={post._id} className="flex flex-col">
             <div className="relative mb-4">
-              <img
+              <Image
                 src={post.thumbnail?.url || "/default-image.jpg"}
                 alt={post.title}
                 width={400}
